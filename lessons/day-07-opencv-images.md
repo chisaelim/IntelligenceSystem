@@ -473,7 +473,7 @@ my-intelligence-system/
     └── point_in_zone.py
 ```
 
-Solutions are in [`solutions/day07/`](solutions/day07/).
+Solutions are in [`solutions/day07/`](solutions/day07/): the exercise files directly in the folder, and the project files in [`project/`](solutions/day07/project/).
 
 ## Instructor notes
 

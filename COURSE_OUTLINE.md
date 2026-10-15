@@ -28,7 +28,7 @@ order below, so every day ends with something that runs.
 | 4 | Settings and secrets loader | `intelligence/config.py` |
 | 5 | Data classes and night-time rule | `Track` (`app.py`), `Detection` (`detector.py`), `RuleEngine.is_night` (`rules.py`) |
 | 7 | Drawing boxes, labels and zones on a frame | `draw_overlay` in `app.py`. The students' first version takes plain boxes and polygons; the reference takes `Track`s and the rule engine, so they upgrade it on Day 15 |
-| 8 | Camera loop with `--source` / `--no-window`, plus a motion detector (the "before AI" baseline) | Camera loop and flags: `main()` in `app.py`. The motion detector is a teaching step, not part of the final system: its reference is `lessons/solutions/day08/exercises/day08/motion_demo.py` |
+| 8 | Camera loop with `--source` / `--no-window`, plus a motion detector (the "before AI" baseline) | Camera loop and flags: `main()` in `app.py`. The motion detector is a teaching step, not part of the final system: its reference is `lessons/solutions/day08/motion_demo.py` |
 | 9 | Event memory in SQLite (`hour_histogram` is added on Day 14) | `intelligence/events.py` |
 | 11 | Telegram alerts from a background thread | `intelligence/telegram_bot.py` |
 | 13 | YOLO detection and tracking | `intelligence/detector.py` |
@@ -191,9 +191,10 @@ does not use them.
   create a Telegram account; Windows students may need to accept conda terms of service once.
 - **Before Day 10:** each student creates a bot with BotFather and sends it one message, so the chat id
   can be read.
-- **Safety net:** `lessons/solutions/dayNN` holds the files of each day, with the paths they have in a student's
-  project. A student who falls behind copies the missing day's folder over their project and carries on
-  (see `lessons/solutions/README.md`). Do not hand out the solutions in advance.
+- **Safety net:** `lessons/solutions/dayNN` holds the files students write on each day: the exercise files
+  directly in the folder and the project files in `dayNN/project/`. A student who falls behind gets the missing
+  day's files with `python lessons/solutions/assemble.py --only N <project folder>` (see
+  `lessons/solutions/README.md`). Do not hand out the solutions in advance.
 - **Demo day (hour 45):** a second alert within `alert.cooldown_seconds` (default 30) of the last one is
   suppressed unless it is HIGH, so students testing one after another should lower it to about 5 in their
   config. To show the "unusual for this hour" rule, point a second config file (`--config`) at the seeded

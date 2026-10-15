@@ -893,7 +893,7 @@ The last item of the rubric is to explain **one false alarm or one miss and how 
 4. **Change one thing** and run the same clip again.
 5. **Compare**, and write down **the price**: every setting has a cost.
 
-Use the template (copy it from `solutions/day15/TUNING_NOTE.template.md` into your project and fill it in). Here is an example of the kind of reasoning that earns full marks:
+Use the template (copy it from `solutions/day15/project/TUNING_NOTE.template.md` into your project and fill it in). Here is an example of the kind of reasoning that earns full marks:
 
 | Part | Example |
 |---|---|
@@ -1250,10 +1250,10 @@ my-intelligence-system/
 │   ├── check_events.py, check_overlay.py, check_detector.py
 │   ├── check_notifier.py, check_app.py, check_pipeline.py
 │   └── check_<your own rule>.py
-└── exercises/day01 ... day15
+└── exercises/day01 ... day13
 ```
 
-Solutions for every file are in [`solutions/day15/`](solutions/day15/).
+Solutions for every file are in [`solutions/day15/project/`](solutions/day15/project/).
 
 ## Instructor notes
 

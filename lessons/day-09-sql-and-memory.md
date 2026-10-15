@@ -811,7 +811,7 @@ my-intelligence-system/
     └── make_practice_db.py
 ```
 
-Solutions are in [`solutions/day09/`](solutions/day09/).
+Solutions are in [`solutions/day09/`](solutions/day09/): the exercise files directly in the folder, and the project files in [`project/`](solutions/day09/project/).
 
 ## Instructor notes
 

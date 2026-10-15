@@ -53,14 +53,21 @@ my-intelligence-system/
 ├── intelligence/                                  (the package: config, rules, detector, events, telegram_bot, app)
 ├── tools/                                         (SQL helper, Telegram checks, history, chart, explain_rules)
 ├── tests/                                         (small self-checks, check_all runs them all)
-└── exercises/day01 ... day15/                     (practice files of each day)
+└── exercises/day01 ... day13/                     (practice files of each day)
 ```
 
 The reference project in the root of this repository is the finished answer. A student's final project must behave the same way as it: the final solution here was compared with it, row by row, on the same video.
 
 ## The solutions
 
-[`solutions/`](solutions/) has one folder per day, `day01` ... `day15`. A day's folder contains **only the files that are new or changed on that day**, with the same paths they have in the student's project. So the state of a project at the end of day N is all the folders from `day01` to `dayN` copied over each other, in order. A student who falls behind can copy the folder of the missing day over their project and carry on. See [`solutions/README.md`](solutions/README.md).
+[`solutions/`](solutions/README.md) has one folder per day, `day01` ... `day15`. A day's folder holds the files students write on that day: the **exercise files directly in the folder** (`day04/parse_env.py`) and the **project files in `dayNN/project/`** (`day04/project/intelligence/config.py`), where a project file has the path it has in a student's project. A project file such as `app.py` is written in stages, and a later day replaces the same file from an earlier day. So the project at the end of day N is the `project/` folders of `day01` to `dayN` copied over each other, in order.
+
+The script [`solutions/assemble.py`](solutions/assemble.py) does it for you, with the same command on every system:
+
+```bash
+python lessons/solutions/assemble.py 8 my-intelligence-system           # the project as it is at the end of day 8
+python lessons/solutions/assemble.py --only 8 my-intelligence-system    # only day 8's files, for a student who fell behind
+```
 
 **Keep the solutions and the reference project away from students until they need them.** If they have the answers from the beginning, many will copy instead of think.
 

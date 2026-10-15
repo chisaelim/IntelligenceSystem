@@ -550,7 +550,7 @@ my-intelligence-system/
     └── errors_demo.py
 ```
 
-Solutions are in [`solutions/day10/`](solutions/day10/).
+Solutions are in [`solutions/day10/`](solutions/day10/): the exercise files directly in the folder, and the project files in [`project/`](solutions/day10/project/).
 
 ## Instructor notes
 

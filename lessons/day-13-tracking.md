@@ -678,7 +678,7 @@ my-intelligence-system/
     └── track_ids.py
 ```
 
-Solutions are in [`solutions/day13/`](solutions/day13/).
+Solutions are in [`solutions/day13/`](solutions/day13/): the exercise files directly in the folder, and the project files in [`project/`](solutions/day13/project/).
 
 ## Instructor notes
 

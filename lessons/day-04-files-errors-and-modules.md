@@ -725,7 +725,7 @@ my-intelligence-system/
         └── use_box_tools.py
 ```
 
-Solutions are in [`solutions/day04/`](solutions/day04/).
+Solutions are in [`solutions/day04/`](solutions/day04/): the exercise files directly in the folder, and the project files in [`project/`](solutions/day04/project/).
 
 ## Instructor notes
 

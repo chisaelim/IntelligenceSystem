@@ -595,7 +595,7 @@ my-intelligence-system/
     └── worker_demo.py
 ```
 
-Solutions are in [`solutions/day11/`](solutions/day11/).
+Solutions are in [`solutions/day11/`](solutions/day11/): the exercise files directly in the folder, and the project files in [`project/`](solutions/day11/project/).
 
 ## Instructor notes
 

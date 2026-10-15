@@ -946,7 +946,7 @@ my-intelligence-system/
     └── check_events.py         <- extended
 ```
 
-Solutions are in [`solutions/day14/`](solutions/day14/).
+Solutions are in [`solutions/day14/project/`](solutions/day14/project/).
 
 ## Instructor notes
 

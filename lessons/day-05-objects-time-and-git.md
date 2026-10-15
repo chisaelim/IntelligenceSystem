@@ -722,7 +722,7 @@ my-intelligence-system/
     └── day01/ ... day05/
 ```
 
-Solutions are in [`solutions/day05/`](solutions/day05/).
+Solutions are in [`solutions/day05/`](solutions/day05/): the exercise files directly in the folder, and the project files in [`project/`](solutions/day05/project/).
 
 ## Instructor notes
 

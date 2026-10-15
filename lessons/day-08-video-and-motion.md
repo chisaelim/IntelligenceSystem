@@ -795,7 +795,7 @@ my-intelligence-system/
     └── motion_demo.py
 ```
 
-Solutions are in [`solutions/day08/`](solutions/day08/).
+Solutions are in [`solutions/day08/`](solutions/day08/): the exercise files directly in the folder, and the project files in [`project/`](solutions/day08/project/).
 
 ## Instructor notes
 

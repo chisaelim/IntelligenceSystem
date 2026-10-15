@@ -662,7 +662,7 @@ my-intelligence-system/
     └── yolo_video.py
 ```
 
-Solutions are in [`solutions/day12/`](solutions/day12/).
+Solutions are in [`solutions/day12/`](solutions/day12/): the exercise files directly in the folder, and the project files in [`project/`](solutions/day12/project/).
 
 ## Instructor notes
 
