@@ -1,0 +1,35 @@
+# Python course environment for Windows (Anaconda, Miniconda or Miniforge).
+# Run the commands in "Anaconda Prompt".
+#
+# Create:   conda env create -f environment-windows.yml
+# Activate: conda activate python-course
+# Update:   conda env update -f environment-windows.yml --prune
+# Remove:   conda env remove -n python-course
+#
+# conda-forge has no TensorFlow build for Windows, so TensorFlow comes from PyPI (pip section).
+# pip also installs Keras 3 and TensorBoard with it. If that step fails with a "No such file or
+# directory" error on a long path, turn on Windows long paths (LongPathsEnabled=1) and run it again.
+name: python-course
+channels:
+  - conda-forge
+  - nodefaults # keep Anaconda's "defaults" channel out, it conflicts with conda-forge builds
+dependencies:
+  - python=3.11
+  - pip=25.0.1
+  - jupyterlab=4.4.0 # pulls in notebook, nbconvert, nbformat and ipykernel
+  - numpy=2.1.3 # TensorFlow 2.19 requires numpy<2.2
+  - scipy=1.15.2
+  - pandas=2.2.3
+  - matplotlib=3.10.1
+  - pillow=11.1.0
+  - opencv=4.12.0 # conda-forge build already bundles py-opencv, libopencv and the contrib modules
+  - scikit-learn=1.6.1
+  - scikit-image=0.25.2
+  # Intelligence system (security_camera.py): YOLO detection + tracking
+  - pytorch=2.10 # conda-forge build shares one OpenMP runtime with numpy/opencv (the pip wheel does not)
+  - torchvision=0.25 # must match the pytorch version (0.26 needs torch 2.11)
+  - ultralytics # YOLO models and the ByteTrack tracker
+  - lap # tracker dependency (linear assignment)
+  - requests # Telegram Bot API calls (telegram_bot.py)
+  - pip:
+      - tensorflow==2.19.1 # pulls in Keras 3 and TensorBoard from PyPI

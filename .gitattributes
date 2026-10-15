@@ -1,0 +1,8 @@
+# Normalise line endings so the project behaves the same on Windows, macOS and Linux.
+* text=auto
+
+# Never touch binaries (the YOLO model and snapshots are git-ignored, but just in case).
+*.pt  binary
+*.jpg binary
+*.png binary
+*.db  binary

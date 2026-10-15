@@ -1,0 +1,44 @@
+{
+  "source": 0,
+  "model": "yolo11n.pt",
+  "confidence": 0.45,
+  "image_size": 640,
+  "device": "auto",
+
+  "watch_classes": ["person", "car", "truck", "bus", "motorcycle", "bicycle", "dog", "cat"],
+  "min_track_frames": 5,
+  "lost_seconds": 5,
+
+  "label_severity": {
+    "person": 2, "car": 1, "truck": 1, "bus": 1, "motorcycle": 1, "bicycle": 1,
+    "dog": 0, "cat": 0
+  },
+
+  "night_hours": ["22:00", "06:00"],
+
+  "zones": [
+    {
+      "name": "front_door",
+      "enabled": false,
+      "polygon": [[0.15, 0.25], [0.85, 0.25], [0.85, 0.95], [0.15, 0.95]],
+      "watch": ["person"]
+    }
+  ],
+
+  "alert": {
+    "min_severity": 2,
+    "cooldown_seconds": 30
+  },
+
+  "anomaly": {
+    "enabled": true,
+    "min_history": 30,
+    "rare_share": 0.02
+  },
+
+  "paths": {
+    "database": "data/events.db",
+    "snapshots": "snapshots",
+    "models": "models"
+  }
+}
