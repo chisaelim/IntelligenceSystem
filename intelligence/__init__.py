@@ -7,6 +7,9 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 # Keep ultralytics' settings inside the project instead of ~/Library/Application Support.
 # This only affects this process and must be set before ultralytics is imported anywhere.
+# The folder must exist (it is git-ignored, so a fresh clone does not have it yet). Otherwise
+# ultralytics thinks it is "not writable" and quietly falls back to a shared temporary folder.
+(PROJECT_ROOT / ".ultralytics").mkdir(exist_ok=True)
 os.environ["YOLO_CONFIG_DIR"] = str(PROJECT_ROOT / ".ultralytics")
 # On Apple Silicon a few ops (e.g. NMS) are missing on the GPU; run just those on the CPU.
 os.environ["PYTORCH_ENABLE_MPS_FALLBACK"] = "1"

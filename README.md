@@ -105,3 +105,8 @@ at places where you have permission to record, and tell people who may be filmed
 - Change `night_hours` and watch the severity of a person rise.
 - Swap `model` to `yolo11s.pt` and compare speed and accuracy.
 - Read `data/events.db` with the `sqlite3` module or `pandas.read_sql` and plot sightings per hour.
+
+## Teaching with this project
+
+[COURSE_OUTLINE.md](COURSE_OUTLINE.md) is a 45-hour course (15 days of 3 hours) that ends with students building their own copy of
+this system. The detailed lessons, with code, labs, answers and the solution for every day, are in [lessons/](lessons/README.md).
